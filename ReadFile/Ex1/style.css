@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+label{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+button{
+    padding: 1px 20px;
+}
+
+.warning{
+    padding: 20px;
+    font-size: 2rem;
+    color: red;
+}
+
+#result-label{
+    padding-top: 30px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    padding: 10px;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+}
+
+span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+input[type='file']{
+    margin-bottom: 10px;
+}
+
+@keyframes loopLaGenni {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.loader{
+    box-sizing: border-box;
+    border:4px solid red;
+    border-left-color: transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation-name:loopLaGenni;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    display: none;
+}

@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Phudu', cursive;
+    padding-bottom: 100px;
+}
+
+.hero{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    padding: 200px 50px;
+    height: 70vh;
+    width: 100%;
+    background: url(images/coffe_back_4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top 0% left 0%;
+}
+
+.hero h1{
+    color: rgba(255, 255, 255, 1);
+}
+
+
+header{
+    display: block;
+    background: rgb(247, 247, 247);
+    height: 90px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: black;
+    margin: 0px 50px;
+    font-weight: 500;
+}
+
+
+
+header ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 50px;
+}
+
+header ul li{
+    padding: 20px 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+ul li a::before{
+    content: '';
+    width: 98%;
+    height: 2px;
+    background: black;
+    margin: 10px auto;
+    position: absolute;
+    top: -120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 500ms ease;
+    
+}
+li a:hover::before{
+    opacity: 1;
+    transition: opacity 100ms ease;
+}
+
+li a:hover{
+    color: black;
+}
+
